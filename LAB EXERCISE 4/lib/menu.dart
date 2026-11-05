@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({super.key});
@@ -19,7 +19,10 @@ class MenuScreen extends StatelessWidget {
             },
             child: Card(
               color: Colors.orange,
-              child: const ListTile(title: Text('Vegetable Pizza')),
+              child: ListTile(
+                leading: Image.asset('assets/images/pizza_1.png', width: 40, height: 40),
+                title: const Text('Vegetable Pizza', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+              ),
             ),
           ),
           GestureDetector(
@@ -28,7 +31,10 @@ class MenuScreen extends StatelessWidget {
             },
             child: Card(
               color: Colors.orange,
-              child: const ListTile(title: Text('Cheese Pizza')),
+              child: ListTile(
+                leading: Image.asset('assets/images/pizza_2.png', width: 40, height: 40),
+                title: const Text('Cheese Pizza', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+              ),
             ),
           ),
           GestureDetector(
@@ -37,7 +43,10 @@ class MenuScreen extends StatelessWidget {
             },
             child: Card(
               color: Colors.orange,
-              child: const ListTile(title: Text('Fries')),
+              child: ListTile(
+                leading: Image.asset('assets/images/fries.png', width: 40, height: 40),
+                title: const Text('Box of Fries', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+              ),
             ),
           ),
         ],

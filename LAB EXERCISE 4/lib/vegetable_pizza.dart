@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+﻿import 'package:flutter/material.dart';
 
 class VegetablePizzaScreen extends StatelessWidget {
   const VegetablePizzaScreen({super.key});
@@ -18,12 +18,45 @@ class VegetablePizzaScreen extends StatelessWidget {
             children: [
               Image.asset(
                 'assets/images/pizza_1.png',
-                height: 300,
+                height: 250,
                 fit: BoxFit.contain,
               ),
+              const SizedBox(height: 15),
               const Text(
-                'Vegetable Pizza is a delicious pizza with fresh vegetables.',
-                textAlign: TextAlign.center,
+                'Vegetable Pizza',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const Padding(
+                padding: EdgeInsets.all(16),
+                child: Text(
+                  'A delicious pizza topped with fresh vegetables '
+                  'and melted mozzarella cheese.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+              const Text(
+                'Ingredients',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const Padding(
+                padding: EdgeInsets.all(16),
+                child: Text(
+                  '• Pizza dough\n'
+                  '• Tomato sauce\n'
+                  '• Mozzarella cheese\n'
+                  '• Fresh tomatoes\n'
+                  '• Mushrooms\n'
+                  '• Green capsicum\n'
+                  '• Onions',
+                  style: TextStyle(fontSize: 16),
+                ),
               ),
               ElevatedButton(
                 onPressed: () {
